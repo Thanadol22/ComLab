@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Control</title>
+</head>
+<body>
+    <h1>LED Control</h1>
+    
+    <h3>LED 1 - Status: {{ 'ON' if led1_status else 'OFF' }}</h3>
+    <form method="post">
+        <button type="submit" name="led1_on">Turn LED 1 ON</button>
+        <button type="submit" name="led1_off">Turn LED 1 OFF</button>
+    </form>
+
+    <h3>LED 2 - Status: {{ 'ON' if led2_status else 'OFF' }}</h3>
+    <form method="post">
+        <button type="submit" name="led2_on">Turn LED 2 ON</button>
+        <button type="submit" name="led2_off">Turn LED 2 OFF</button>
+    </form>
+</body>
+</html>
